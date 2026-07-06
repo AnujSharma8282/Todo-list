@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.background {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, blue, purple);
+    padding: 10px;
+}
+
+.innerBox {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+}
+
+.heading {
+    border-radius: 10px;
+    color: blue;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.textBoxStyle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(169, 148, 148); 
+    border-radius: 30px;
+    padding-left: 20px; 
+    margin-bottom: 25px;
+}
+
+.textBox {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.buttonStyle {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.list-item {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.list-item::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(1.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+.tick {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.tick::before {
+    background-image: url(2.png);
+}
+
+.list-item span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: gray; 
+    line-height: 30px; 
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.list-item span:hover { 
+    background: white; 
+    color: black;
+}
